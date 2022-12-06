@@ -19,6 +19,6 @@ git clone --depth 1 https://github.com/xiaorouji/openwrt-passwall.git package/op
 git clone --depth 1 -b luci https://github.com/xiaorouji/openwrt-passwall package/passwall
 git clone --depth 1 https://github.com/linkease/istore.git package/istore
 git clone --depth 1 https://github.com/linkease/istore-ui.git package/istore-ui
-git clone --depth 1 https://github.com/vernesong/OpenClash/trunk/luci-app-openclash package/luci-app-openclash
-git clone --depth 1 https://github.com/kiddin9/openwrt-packages/trunk/luci-app-wrtbwmon package/luci-app-wrtbwmon
-git clone --depth 1 https://github.com/kiddin9/openwrt-packages/trunk/wrtbwmon package/wrtbwmon
+svn co https://github.com/vernesong/OpenClash/trunk/luci-app-openclash package/luci-app-openclash
+svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-wrtbwmon package/luci-app-wrtbwmon
+svn co https://github.com/kiddin9/openwrt-packages/trunk/wrtbwmon package/wrtbwmon
