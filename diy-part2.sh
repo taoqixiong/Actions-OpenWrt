@@ -15,9 +15,13 @@ curl -fsSL https://raw.githubusercontent.com/coolsnowwolf/luci/master/applicatio
 curl -fsSL  https://raw.githubusercontent.com/firkerword/KPR/main/cus_config.yaml > ./package/openwrt-mos/luci-app-mosdns/root/etc/mosdns/cus_config.yaml
 
 sed -i 's/bootstrap/argon/g' ./feeds/luci/modules/luci-base/root/etc/config/luci
+rm -rf ./package/lean/luci-theme-argon
 rm -rf ./package/diy-ziyong/theme
 rm -rf ./package/diy-ziyong/luci-app-wrtbwmon
 rm -rf ./package/diy-ziyong/wrtbwmon
 rm -rf ./feeds/packages/net/adguardhome
 rm -rf ./feeds/packages/net/smartdns
 rm -rf ./feeds/packages/net/mosdns
+#rm -rf ./feeds/luci/applications/luciluci-app-lxc
+
+#svn co https://github.com/openwrt/luci/trunk/applications/luci-app-lxc /feeds/luci/applications/luci-app-lxc
